@@ -4,7 +4,7 @@ fn main() {
     config
         .type_attribute(
             ".",
-            "#[derive(serde::Serialize, serde::Deserialize,PartialOrd)]",
+            "#[derive(PartialOrd)]",
         )
         .out_dir(path::PathBuf::from("src/pb"))
         .compile_protos(&["src/pb/abi.proto"], &["."])
